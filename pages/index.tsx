@@ -19,7 +19,7 @@ export default function Home() {
     AnswerModel.right("Preto"),
   ])
 
-  const [question, setQuestion] = useState<QuestionModel>(questionMock)
+  const [question, setQuestion] = useState<QuestionModel>()
   const [questionIds, setQuestionIds] = useState<number[]>([])
   const [rightQuestions, setRightQuestions] = useState<number>(0)
 
