@@ -27,7 +27,7 @@ export default function Home() {
     questionIds.length > 0 && loadingQuestion(questionIds[0])
   }, [questionIds])
 
-  const BASE_URL = "http://localhost:3000/api"
+  const BASE_URL = "https://quizz-gray.vercel.app/api"
 
   async function questionsIdsLoading () {
     const response = await fetch(`${BASE_URL}/questionnaire`)
