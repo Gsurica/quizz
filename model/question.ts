@@ -32,6 +32,10 @@ export default class QuestionModel {
     return this.#rightAnswer
   }
 
+  get NotRightAnswer () {
+    return !this.#rightAnswer
+  }
+
   get questionAnswered () {
     for (let answer of this.#answer) {
       if (answer.showed) return true
@@ -52,6 +56,11 @@ export default class QuestionModel {
   shuffleAnswers (): QuestionModel {
     let shuffleQuestions = shuffle(this.#answer)
     return new QuestionModel(this.#id, this.#question, shuffleQuestions, this.#rightAnswer)
+  }
+
+  static fromObject (model: QuestionModel): QuestionModel {
+    const answers = model.answer.map(res => AnswerModel.fromObject(res))
+    return new QuestionModel(model.id, model.question, answers)
   }
 
   toLiteralObject () {

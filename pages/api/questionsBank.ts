@@ -21,10 +21,10 @@ const questions: QuestionModel[] = [
     AnswerModel.right("Matilha"),
   ]),
   new QuestionModel(204, "Qual é o triângulo que tem todos os lados diferentes?", [
-    AnswerModel.wrong("Caju"),
-    AnswerModel.wrong("Côco"),
-    AnswerModel.wrong("Chuchu"),
-    AnswerModel.right("Abóbora"),
+    AnswerModel.wrong("Escalêno"),
+    AnswerModel.wrong("Equilátero"),
+    AnswerModel.wrong("Isoceles"),
+    AnswerModel.right("Retângulo"),
   ]),
 ]
 

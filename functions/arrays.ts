@@ -4,3 +4,4 @@ export function shuffle (el: any[]): any[] {
         .sort((el1, el2) => el1.random - el2.random)
         .map(value => value.value)
 }
+

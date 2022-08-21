@@ -38,6 +38,10 @@ export default class AnswerModel {
     return new AnswerModel(this.#value, this.#rightAnswer, true)
   }
 
+  static fromObject (model: AnswerModel): AnswerModel {
+    return new AnswerModel(model.value, model.rightAnswer)
+  }
+
   toLiteralObject () {
     return {
       value: this.#value,

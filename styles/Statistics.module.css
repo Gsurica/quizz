@@ -1,0 +1,22 @@
+.statistics {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+}
+
+.value {
+  display: flex;
+  height: 180px;
+  width: 180px;
+  align-items: center;
+  border-radius: 90px;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.text {
+  color: #ddd;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
